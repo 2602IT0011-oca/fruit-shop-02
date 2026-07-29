@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # get "products/index"
+  get "products/index", to: "products#index"
+  get "products/new", to: "products#new"
   # get "home/top"
   root to: "home#top"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
